@@ -20,10 +20,10 @@ fi
 ### ROTATE PICTURE ###
 mogrify -rotate 180 $FILE
 
-### EXPORT TO PDF ###
+### EXPORT AS PDF ###
 convert $FILE $PDFFILE
 
-### DELETE OLD JPG File ###
+### DELETE  JPG File ###
 rm $FILE
 
-echo "Scanned to: " $PDFFILE
+echo "Scan Document as File: " $PDFFILE
